@@ -1,0 +1,132 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: rgb(29, 29, 66);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #7FFF00; /* Chartreuse color */
+}
+
+#item, .react-datepicker__input-container input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn {
+  background: #FF69B4; /* Hot Pink */
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FF1493; /* Deep Pink */
+}
+
+.btn-danger {
+  background: #FF4500; /* Orange Red */
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #DC143C; /* Crimson */
+}
+
+.header {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #00FFFF; /* Aqua */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.list li:nth-child(odd) {
+  background-color: #e9ecef; /* Light Gray */
+}
+
+.list li label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.list li label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.list li label span {
+  color: #007BFF; /* Blue */
+}
+
+.list li.completed {
+  text-decoration: line-through;
+  background-color: #d4edda; /* Light Green */
+}
+
+.list li:hover {
+  background-color: #ddefff; /* Light Blue */
+}
